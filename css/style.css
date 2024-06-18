@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: calc(100svh - 56px);
+    display: flex;
+}
+
+.side-bar {
+    width: 75px;
+    background-color: black;
+}
+
+.main-content {
+    background-color: lightgreen;
+    width: calc(100svw - 75px);
+    overflow-y: scroll;
+}
