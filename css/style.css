@@ -11,11 +11,66 @@ main {
 
 .side-bar {
     width: 75px;
-    background-color: black;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .main-content {
     background-color: lightgreen;
     width: calc(100svw - 75px);
     overflow-y: scroll;
+}
+
+.navbar .container-fluid {
+    height: 60px;
+    background-color: white;
+}
+
+#logo-md {
+    display: block;
+    height: 60px;
+}
+
+#logo-lg {
+    display: none;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.side-bar ul {
+    list-style-type: none;
+}
+
+/* COLOR TEXT */
+
+.c-orange {
+    color: #FF8F00;
+}
+
+.c-white {
+    color: white;
+}
+
+.bg-grey {
+    background-color: #E5E5E5;
+}
+
+.bg-lightgrey {
+    background-color: #F8F9FA;
+}
+
+@media screen and (min-width: 0) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #logo-md {
+        display: none;
+    }
+
+    #logo-lg {
+        display: block;
+    }
 }
