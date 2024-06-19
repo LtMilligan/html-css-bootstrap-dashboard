@@ -43,23 +43,147 @@
           </nav>
     </header>
     <main>
-        <div class="side-bar">
-          <div class="c-white">
+        <div class="side-bar d-flex flex-column justify-content-between">
+          <div class="c-white py-4">
             <ul>
-              <li><i class="bi bi-house-door-fill"></i></li>
-              <li></li>
-              <li><i class="bi bi-reception-4"></i></li>
+              <li class="py-2">
+                <i class="bi bi-house-door-fill"></i>
+                <span class="px-2 d-none d-lg-inline-block">Home</span>
+              </li>
+              <li class="py-2">
+                <i class="bi bi-graph-up"></i>
+                <span class="px-2 d-none d-lg-inline-block">Stats</span>
+              </li>
+              <li class="py-2">
+                <i class="bi bi-reception-4"></i>
+                <span class="px-2 d-none d-lg-inline-block">Signals</span>
+              </li>
+            </ul>
+          </div>
+          <div class="c-white py-4">
+            <ul>
+              <li class="py-2">
+                <i class="bi bi-gear-fill"></i>
+                <span class="px-2 d-none d-lg-inline-block">Admin</span>
+              </li>
             </ul>
           </div>
         </div>
         </div>
         <div class="main-content">
-            <div class="container">
+            <div class="container-fluid bg-primary m-0">
                 <div class="row">
                     <div class="col-12 order-1 col-md-4 order-md-0">Boolean</div>
                     <div class="col-12 order-2 col-md-4 order-md-0">Studenti online</div>
                     <div class="col-12 order-0 col-md-4 order-md-0">Nuovo studente</div>
                 </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-lg-8">
+                  <div class="card border-light mt-3 mb-3" style="max-width: 100%;">
+                    <div class="card-header">Prossime classi</div>
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="col-6 col-md-4 col-lg-5">Nome</th>
+                            <th scope="col" class="d-none col-md-3 d-md-table-cell col-lg-3">Data inizio</th>
+                            <th scope="col" class="d-none col-md-1 d-md-table-cell col-lg-1">ROI</th>
+                            <th scope="col" class="col-3 col-md-2 col-lg-1 text-center">Stato</th>
+                            <th scope="col" class="col-3 col-md-2 col-lg-2">Azioni</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 75</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">15 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-success border rounded-2">Done</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 76</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">16 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-success border rounded-2">Done</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 77</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">17 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-warning border rounded-2">process</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 78</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">18 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-success border rounded-2">Done</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 79</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">19 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-danger border rounded-2">failed</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 80</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">20 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-success border rounded-2">Done</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 81</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">21 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-danger border rounded-2">failed</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="col-6 col-md-4 col-lg-5"><i class="bi bi-code-slash me-2 py-1 px-2 text-bg-danger rounded-circle"></i>Classe 82</th>
+                            <td class="d-none col-md-3 d-md-table-cell col-lg-3">22 Feb 2021</td>
+                            <td class="d-none col-md-1 d-md-table-cell col-lg-1">20%</td>
+                            <td class="col-3 col-md-2 col-lg-1 text-center"><span class="font-tiny px-1 pb-1 text-bg-success border rounded-2">Done</span></td>
+                            <td class="col-3 col-md-2 col-lg-2 text-secondary"><i class="bi bi-pencil-fill me-1 px-1 py-1 border border-secondary"></i><i class="bi bi-trash3-fill px-1 py-1 border border-secondary"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="card border-light" style="max-width: 100%;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Light card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card border-light mt-3 mb-3" style="max-width: 100%;">
+                    <div class="card-header">Todo</div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush  border rounded-2 border-light-subtle">
+                        <li class="list-group-item"><input type="checkbox" class="me-2">Kickoff nuove classi</li>
+                        <li class="list-group-item"><input type="checkbox" class="me-2">Lezione su Bootstrap 5 in classe #75</li>
+                        <li class="list-group-item"><input type="checkbox" class="me-2">Controllare username github studenti</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 100%;">
+                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </main>
